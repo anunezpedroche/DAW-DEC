@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    form{
+        background-color:gray; 
+        display: inline-block;
+        align-items: center;
+        text-align: right;
+        width: 650px;
+        padding: 10px;
+    }
+    input{
+        display: inline-table;
+        width: 500px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    button{
+        float: left;
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+    </style>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <form id="myForm">
+        <h2>Formulario Total</h2>
+        Nombre: <input type="text" onblur="blurFunction()" id="name"><br>
+        Apellidos: <input type="text" onblur=""><br>
+        e-mail: <input type="text" onblur=""><br>
+        DNI: <input type="text" onblur=""><br>
+        Password: <input type="text" onblur=""><br>
+        Repetir password <input type="text" onblur=""><br>
+        IP Equipo: <input type="text" onblur=""><br>
+        <button onclick="">Enviar</button>
+    </form>
+</body>
+</html>
