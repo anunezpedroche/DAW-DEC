@@ -11,7 +11,7 @@
         display: inline-block;
         align-items: center;
         text-align: right;
-        width: 650px;
+        width: 700px;
         padding: 10px;
     }
     input{
@@ -23,10 +23,15 @@
     h2{
         text-align: center;
     }
-    button{
+    input[type="button"]{
         float: left;
-        margin-left: 50%;
+        margin-left: 45%;
         margin-top: 10px;
+        background-color: blue;
+        border: none;
+        width: 100px;
+        height: 30px;
+        color:white;
     }
     </style>
     <script src="main.js"></script>
@@ -35,14 +40,14 @@
 <body>
     <form id="myForm">
         <h2>Formulario Total</h2>
-        Nombre: <input type="text" onblur="blurFunction()" id="name"><br>
-        Apellidos: <input type="text" onblur=""><br>
-        e-mail: <input type="text" onblur=""><br>
-        DNI: <input type="text" onblur=""><br>
-        Password: <input type="text" onblur=""><br>
-        Repetir password <input type="text" onblur=""><br>
-        IP Equipo: <input type="text" onblur=""><br>
-        <button onclick="">Enviar</button>
+        Nombre: <input type="text" onblur="validarNombre(this)" id="name"><br>
+        Apellidos: <input type="text" onblur="validarApellidos(this)" id="surname"><br>
+        e-mail: <input type="text" onblur="validarMail(this)" id="mail"><br>
+        DNI: <input type="text" onblur="validarDni(this)" id="dni"><br>
+        Password: <input type="password" onblur="validarPassword(this)" id="password"><br>
+        Repetir password: <input type="password" onblur="validarRPassword(this)" id="rpassword"><br>
+        IP Equipo: <input type="text" onblur="validarIpEquipo(this)" id="ipequipo"><br>
+        <input type="button" value="Enviar" onclick="validarFormulario(this)"/>
     </form>
 </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<head>
+		<title> Primer script JavaScript </title>
+		<!-- // PRIMER EJERCICIO -->
+		<!--<script type="text/javascript">
+		var arr = new Array;
+		i = prompt("Introduzca los elementos a introducir");
+		for(j=1;j<=i;j++){
+			num = prompt ("Introduzca número entero");
+			arr.push(num);
+		}
+		x = 1;
+		arr.forEach(function (element){
+			if(element > x){
+				x = element;
+			}
+		})
+		console.log(x);
+		</script>-->
+				<!-- // SEGUNDO EJERCICIO -->
+				<script type="text/javascript">
+					valor = prompt("Introduzca un número a partir del cual se calcularán los 5 primeros números felices");
+					i = 0;
+					while(i < 5){
+
+						esFeliz(valor);
+						console.log(num);
+						valor++;
+						i++;
+					}
+					function esFeliz (valor){
+						num = valor;
+						var n;
+						vistos = new Array();
+						acum = 0;
+						count = 0;
+						while(num!=1&&vistos[num]!=true&&count<200){
+							vistos[num] = true;
+							while(num > 0){
+								//Con esta operación obtenemos el número de la derecha
+								n = num % 10;
+								//Guardamos su cuadrado
+								acum = acum + n**2;
+								//Nos quedamos con el número de la izquierda
+								num = (num-n)/10;
+								
+								vistos[num];
+								}
+							num = acum;
+							acum = 0;
+							count++;						
+							}
+					}	
+				</script>
+	</head>
+</html>

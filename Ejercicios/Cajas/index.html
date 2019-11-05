@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import 'estilo.css';
+    </style>
+
+</head>
+<body>
+        <div class="padre"><div id="red" onmouseover="rojo(this)" onmouseout="fuera(this)" onmousedown="sombra(this)" onmouseup="noSombra(this)" ondblclick="exterior(this)"></div><button onclick="eliminar(red)">Eliminar</button></div>
+        <div class="padre"><div id="green" onmouseover="rojo(this)" onmouseout="fuera(this)" onmousedown="sombra(this)" onmouseup="noSombra(this)" ondblclick="exterior(this)"></div><button onclick="eliminar(green)">Eliminar</button></div>
+        <div class="padre"><div id="blue" onmouseover="rojo(this)" onmouseout="fuera(this)" onmousedown="sombra(this)" onmouseup="noSombra(this)" ondblclick="exterior(this)"></div><button onclick="eliminar(blue)">Eliminar</button></div>
+        <div class="padre"><div id="black" onmouseover="rojo(this)" onmouseout="fuera(this)" onmousedown="sombra(this)" onmouseup="noSombra(this)" ondblclick="exterior(this)"></div><button onclick="eliminar(black)">Eliminar</button></div> 
+</body>
+<script>
+function rojo(e){
+    e.style.borderRadius = "150px";
+    e.style.transition = "1s";
+    e.onmouseout.borderRadius="0px";
+}
+function fuera(b){
+    b.style.borderRadius = "0px";
+}
+var tieneSombra = false;
+function sombra(e){
+    e.style.boxShadow = "10px 10px 0px orange";
+
+
+}
+function noSombra(e){
+    e.style.borderRadius = "150px";
+    e.style.boxShadow = "none";
+
+
+}
+function exterior(e){
+    e.style.boxShadow = "10px 10px 0px orange inset";
+    e.style.borderRadius = "150x";
+    e.onmouseout="";
+    e.onmouseclick="";
+    e.onmousdblclick="";
+}
+function eliminar(e){
+    let nodoEliminar = document.getElementsByTagName("padre");
+    let padre = e.parentNode;
+    padre.remove();
+    padre.style.transition = "2 s";
+}
+</script>
+</html>

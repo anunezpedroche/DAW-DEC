@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a = 1;
+    </script>
+    <style>
+        #crearDiv{
+            border: 1px red dotted;
+            width: 400px;
+            height: 350px;
+        }
+        #crearDiv2{
+            border: 1px red dotted;
+            width: 400px;
+            height: 350px;
+        }
+        div{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+            <div id="crearDiv">
+                
+            </div>            
+            <div id="crearDiv2">
+                
+            </div>
+            <br>
+            <button onclick="crearParrafo()"> Crear párrafo</button>
+    <script>
+            let p = new Array();
+            p = document.getElementsByTagName("div");
+    
+            console.log(p.length);
+
+            function crearParrafo(){
+                if (a==1){
+                    a = 0;
+                    var nodoPadre = document.getElementById("crearDiv");
+                    var parrafo = document.createElement("p");
+                    var text = document.createTextNode("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ratione labore laborum commodi ullam dolorum sequi maxime culpa provident expedita repellendus perspiciatis rem omnis minus natus corrupti, aliquam assumenda, eligendi maiores nesciunt doloribus. Repellendus illum voluptate, esse commodi optio rerum corrupti suscipit omnis doloremque at minus reprehenderit quisquam incidunt molestias praesentium consectetur aut, blanditiis aliquid vitae deleniti dolorem, id atque impedit. Adipisci iste obcaecati odit dolores quisquam dolorem rem facere assumenda nobis cum, saepe eligendi, veritatis sapiente suscipit earum quidem quis quia. Odio itaque eaque enim amet a incidunt porro? Maiores laborum odit odio quis a doloribus voluptates, deleniti ea.");
+                    parrafo.appendChild(text);
+                    nodoPadre.appendChild(parrafo);
+                }else if (a==0){
+                    a = 1;
+                    var nodoPadre2 = document.getElementById("crearDiv2");
+                    var parrafo = document.createElement("p");
+                    var text = document.createTextNode("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ratione labore laborum commodi ullam dolorum sequi maxime culpa provident expedita repellendus perspiciatis rem omnis minus natus corrupti, aliquam assumenda, eligendi maiores nesciunt doloribus. Repellendus illum voluptate, esse commodi optio rerum corrupti suscipit omnis doloremque at minus reprehenderit quisquam incidunt molestias praesentium consectetur aut, blanditiis aliquid vitae deleniti dolorem, id atque impedit. Adipisci iste obcaecati odit dolores quisquam dolorem rem facere assumenda nobis cum, saepe eligendi, veritatis sapiente suscipit earum quidem quis quia. Odio itaque eaque enim amet a incidunt porro? Maiores laborum odit odio quis a doloribus voluptates, deleniti ea.");
+                    parrafo.appendChild(text);
+                    nodoPadre2.appendChild(parrafo);
+                }
+
+                
+            }
+        </script>
+</body>
+</html>

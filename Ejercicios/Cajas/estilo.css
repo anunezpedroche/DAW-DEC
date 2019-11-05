@@ -1,0 +1,27 @@
+div{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+
+}
+button{
+    display: inline-block;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#black{
+    background-color: black;
+}
+.padre{
+    width:310px;
+    height: 350px;
+}
