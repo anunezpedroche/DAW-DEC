@@ -1,11 +1,24 @@
-.celda{
-  
+.celda {
     background-color: orange;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
-#mapa{
+#mapa {
+    position: relative;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(3,300px);
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+body {
+    background-color: black;
+}
+
+.equis {
+    background-color: red;
+}
+
+.maq {
+    background-color: blue;
 }
