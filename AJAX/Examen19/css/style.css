@@ -2,6 +2,13 @@ a, button {
     width:100px;
     margin:5px;
 }
+#check{
+    display:flexbox;
+}
+.contenedor{
+    width: 100px;
+    height: 200px;
+}
 select {
     -webkit-appearance: none;
 }
