@@ -1,5 +1,7 @@
+let url = 'http://192.168.1.144:8000/AJAX/Examen19/got.json';
+
 function recuperarJSON() {
-    return fetch('http://localhost:8000/AJAX/Examen19/got.json').then(
+    return fetch(url).then(
         response => response.json())
         .then(got => {
             crearPlantilla(got);
