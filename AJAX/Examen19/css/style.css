@@ -4,9 +4,12 @@ a, button {
 }
 #check{
     display:flexbox;
+    width: 400px;
 }
 .contenedor{
-    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+    width: 150px;
     height: 200px;
 }
 select {
